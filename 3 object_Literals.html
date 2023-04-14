@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let name = "student"
+        let age = 21
+
+        let n = 'student_'
+
+
+        // let obj={
+        //     name: name,
+        //     age: age,
+        // }
+
+        // but in Es6 we have short code 
+
+        // we can concatenate anything through Object literals
+        // let obj={
+        //     name,
+        //     age,
+        // }
+
+        let obj={
+            // [n]: name,
+            // [`n ${age}`]: name,
+            [n+"name"]: "Stewart Alex",
+            course: "BBIT",
+            // Bio: function(){
+            //     return (`${this.student_name} is student of ${this.course}`)
+            // }
+            // you can write directly
+            Bio(){
+                return (`${this.student_name} is student of ${this.course}`)
+            }
+            
+        }
+        // console.log(obj.n)
+
+        // console.log(obj.Bio())
+
+        console.log(obj[`Bio`]())
+
+        // -----------------------------------------------------------
+
+        let fname = "Stewart";
+        let lname = "Alex";
+        let Education = "BBIT";
+
+        function Info(fname, lname, Education){
+            let full_name = fname + lname;
+            return (full_name, Education)
+        }
+        
+        const s = Info(fname,lname, Education)
+        console.log(s.full_name)
+        console.log(s.Education)
+
+        // console.log(obj)
+    </script>
+</body>s
+</html>

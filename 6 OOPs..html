@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // we create class and create methods in class
+        class user{
+            // this is called methods
+            // message(){
+            //     console.log("My name is Stewart Alex")
+            // }
+            // reply(){
+            //     console.log("O that's great")
+            // }
+
+            // Now its time create reusable code for better experience
+            constructor(name, age){
+                this.name = name,
+                this.age = age,
+                console.log("Hello World")
+            }
+            reply(){
+                document.write(`My name is ${this.name} my age is ${this.age}`)
+            }
+        }
+
+
+        // this class convert into Object and it is very important step
+        let a = new user("stewart Alex", 21)
+        let b = new user("Ashley", 22)
+        let c = new user("Callista", 12)
+
+        a.reply()
+        b.reply()
+        c.reply()
+        // console.log(a.message())
+        // console.log(a.reply())
+    </script>
+</body>
+</html>

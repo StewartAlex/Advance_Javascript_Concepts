@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Des</title>
+</head>
+<body>
+    <script>
+        
+        // let [name, age, gender, city, Education] = user;
+
+        // this is called Nested Array 
+
+        // let user = ["Stewart Alex", 21, "Male", "karachi", ["VU", "BBIT"]]
+
+        // let [name, age, gender, city, [college, course]] = user;
+        
+        // we can use with rest operator it will convert into array automatically
+        // let [name, ...args] = user;
+        
+        function user(){
+            return (["Stewart Alex", 21, "Male", "karachi", ["VU", "BBIT"]])
+        }
+        // user()
+        let [name, age, gender, city, [college, course]] = user();
+
+        console.log(user);
+        console.log(name);
+        // console.log(args);
+        console.log(age);
+        console.log(gender);
+        // console.log(Education);
+        console.log(college);
+        console.log(course);
+    </script>
+</body>
+</html>

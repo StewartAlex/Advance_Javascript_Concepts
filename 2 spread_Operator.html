@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // spread is use when we call the functions 
+
+        //  let sum = function(name,course, ...args){
+        //     // the Arguments convert into Objects with Index 
+        //     console.log(arguments);
+            
+            
+        //     document.write(`The name is ${name} and the Course is ${course} of marks is `);
+            
+        //     sum = 10;
+        //     for(let i in args){
+        //         sum += args[i];
+        //     }
+        //     document.write(sum);
+        // }
+        
+        // const arr = [20,30,40,90];
+        
+        // sum("Stewart Alex","BBIT", ...arr);
+        // sum("Stewart Alex","BBIT", arr);
+        // sum("Stewart Alex","BBIT",40,30,20,70,10);
+
+
+        var arr1 = [40, 50, 80, 90];
+        
+        // let arr2 = arr1;
+
+        // var arr2 = arr1;
+
+        var arr2 = [200, 300];
+
+        arr2.push(70);
+        
+
+        // var arr3 = arr1.concat(arr2)
+
+        // but we can concate value with the help of spread operator 
+        // var arr3 = [...arr1, ...arr2]
+        // var arr3 = [...arr1, ...arr2]
+
+        var arr3 = [10, 20,...arr1, ...arr2 , 200, 300]
+
+        // we can use spread operator with Objects with hands commands
+
+        let obj1 = {
+            name: "Stewart Alex",
+            gender: "male",
+        }
+        let obj2 = {
+            age: 60,
+        }
+
+        // let obj3 = {obj1 , obj2}
+        // let obj3 = {...obj1 , obj2}
+        let obj3 = {...obj1 , ...obj2}
+
+        console.log(arr1)
+        console.log(arr2)
+        console.log(arr3)
+
+        console.log(obj3);
+        // console.log(...arr)      //it will give you value  
+        // console.log([...arr])    //it will clone and copy you whole array value
+    </script>
+</body>
+</html>
